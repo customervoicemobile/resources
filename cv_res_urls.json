@@ -1,0 +1,83 @@
+{
+  "Version": "2.0",
+  "dependence": [
+    {
+      "method": "GET",
+      "mapkey": "vendors/sortablejs-1.8.4/sortable.modified.min.js",
+      "fullUrl": "https://cdn.forms.office.net/forms/scripts/vendors/sortablejs-1.8.4/sortable.modified.min.$chunk$.js"
+    }
+  ],
+  "staticresouces": [
+    {
+      "method": "GET",
+      "fullUrl": "https://c1.microsoft.com/c.gif"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/customervoice/customervoice.ico"
+    },
+    {
+      "method": "GET",
+      "mimeType": "font\/woff2",
+      "fullUrl": "https://cdn.forms.office.net/forms/fonts/fabricmdl2icons-3.70-20201111.subset.woff2"
+    },
+    {
+      "method": "GET",
+      "mimeType": "font\/woff2",
+      "fullUrl": "https://cdn.forms.office.net/forms/fonts/fluent-20201201/formsfluenticons.woff2?ba2060c80bc3e4b06905168f27922c84"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-very-negative.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-neutral.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-negative.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-negative-grey.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-neutral-grey.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-positive-grey.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-positive.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-very-negative-grey.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-very-positive-grey.svg"
+    },
+    {
+      "method": "GET",
+      "fullUrl": "https://cdn.forms.office.net/forms/images/formspro/senti-very-positive.svg"
+    },
+    {
+      "method": "POST",
+      "mimeType": "application\/json",
+      "encoding": "utf-8",
+      "fullUrl": "https://customervoice.microsoft.com/Pages/ResponsePage.aspx/GetResourceStrings"
+    },
+    {
+      "method": "POST",
+      "mimeType": "application\/json",
+      "encoding": "utf-8",
+      "payload": "{\"name\":\"CV_Blue\"}",
+      "fullUrl": "https://customervoice.microsoft.com/Pages/ResponsePage.aspx/GetThemes"
+    }
+  ]
+}
