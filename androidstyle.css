@@ -1,0 +1,441 @@
+﻿
+
+/*Android Styles */
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 4px !important;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px ;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.38);
+  border-radius: 2px;
+  height:55px !important;
+}
+
+.office-form-body {
+    padding: 3px 30px 70px;
+    background: #fff;
+    opacity: 1.0;
+    background-color:var(--form-body-background-color);
+    line-height: var(--cv-question-interval-height);
+}
+@media screen and (max-width: 640px) {
+    .small-screen .office-form-body {
+        padding: 0px 0px;
+    }
+}
+.office-form-notice-container {
+    font-family: var(--cv-question-font);
+    font-size: 14px;
+    color: #333;
+    line-height: 100%;
+    margin-left: 20px;
+}
+
+.customer-voice .small-screen.office-form-content {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--form-theme-background);
+}
+
+/*office form css override*/
+.office-form-theme-primary-foreground,
+.office-form-theme-primary-color {
+  color: var(--form-theme-primary-color);
+}
+.office-form-theme-secondary-color,
+.office-form-theme-secondary-color:focus,
+.office-form-theme-secondary-color:hover {
+  color: var(--form-theme-secondary-color) !important;
+}
+.office-form-theme-primary-background,
+.office-form-theme-sort-item.office-form-selected-item,
+.office-form-theme-sort-item:focus {
+  background: var(--form-theme-primary-color) !important;
+  color: var(--form-theme-text-on-primary-color) !important;
+}
+.office-form-theme-secondary-background {
+  background: var(--form-theme-secondary-color);
+  color: var(--form-theme-text-on-secondary-color);
+}
+.office-form-theme-background,
+.office-form-theme-page-background {
+  background-color: var(--form-theme-background);
+}
+.office-form-theme-button {
+  color: var(--form-theme-text-on-primary-color) !important;
+  border-color:var(--form-theme-primary-color) !important;
+  background: var(--form-theme-primary-color) !important;
+
+  font-family: var(--cv-question-font);
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+.office-form-dark-theme-button
+{
+  color: black !important;
+  border-color:var(--form-theme-primary-color) !important;
+  background: var(--form-theme-text-on-primary-color) !important;
+
+    font-family: var(--cv-question-font);
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.office-form-theme-quiz-point {
+  color: var(--form-theme-secondary-color);
+}
+.office-form-theme-interactive-color {
+  color: var(--form-theme-primary-color);
+}
+.office-form-theme-image-container-border {
+  border: 3px solid var(--form-theme-background);
+}
+.office-form-theme-focus-border:focus {
+  border-color: var(--form-theme-primary-color);
+  outline-color: var(--form-theme-primary-color);
+}
+.office-form-theme-button-foreground.active,
+.office-form-theme-button-foreground.touch.active:hover {
+  color: var(--form-theme-text-on-primary-color);
+  background: var(--form-theme-primary-color);
+  outline-color: var(--form-theme-primary-color);
+}
+.office-form-theme-button-foreground.active:hover {
+  background: var(--form-theme-secondary-color);
+  outline-color: var(--form-theme-secondary-color);
+}
+.office-form-theme-footer {
+  display:none
+}
+.office-form-theme-page-background {
+  background-color: var(--form-theme-background);
+}
+.office-form-theme-shadow {
+  box-shadow: var(--form-theme-shadow);
+}
+.office-form-theme-progress-bar-background {
+  background: var(--form-theme-progress-bar-background) !important;
+}
+/*End*/
+
+@media screen and (max-width: 534px) {
+    .office-form-question-title {
+        width: 99%;
+    }
+}
+
+.office-form-question {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+}
+.small-screen .office-form-question-content {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.office-form-question-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.question-title-box {
+    position: relative;
+}
+.small-screen .office-form-question-title {
+    font-family: var(--cv-question-title-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--cv-question-title-font-size);
+    line-height: var(--cv-question-line-height);
+}
+
+
+.office-form-question-title > .ordinal-number {
+    position: absolute;
+    right: 100%;
+    padding-right: 3px;
+}
+.office-form-question-element {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.office-form-question-rating-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*
+Text Field
+*/
+.office-form-textfield {
+    position: relative;
+    margin-right: 20px;
+}
+
+div.office-form-textfield > input,
+div.office-form-textfield > textarea {
+    background-color: var(--form-question-textbox-background-color);
+    color: var(--form-question-textbox-front-color);
+    position: static;
+    height: 24px;
+    left: 0px;
+    right: 0px;
+    top: calc(50% - 24px/2);
+    /* Subheading 1 (Regular 16sp) */
+    font-family: var(--cv-question-font);
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    /* Neutrals / Mobile / Gray 900 #212121 */
+    color: #212121;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #E1E1E1;
+    padding-left: 0;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+div.office-form-textfield > input:focus,
+div.office-form-textfield > textarea:focus,{
+    background-color: var(--form-question-textbox-background-color);
+    color: var(--form-question-textbox-front-color);
+    position: static;
+    height: 24px;
+    left: 0px;
+    right: 0px;
+    top: calc(50% - 24px/2);
+    /* Subheading 1 (Regular 16sp) */
+    font-family: var(--cv-question-font);
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    /* Neutrals / Mobile / Gray 900 #212121 */
+    color: #212121;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-width: 2px;
+    border-bottom-color: #0078D4;
+    padding-left: 0;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.mobile-view .office-form-question-element {
+    margin-top: 18px;
+    margin-left: var(--form-question-element-margin-left);
+}
+.mobile-view .office-form-theme-primary-background.office-form-title-container {
+    Display: var(--form-title-container);
+}
+
+.office-form-question-matrix-choice {
+    background: white;
+}
+
+.form-content > .form-content-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    font-family: var(--cv-question-font);
+}
+
+/*
+Radio button
+*/
+.office-form-question-choice-mobile {
+    border: none;
+    background-color: white;
+    width: 100%;
+    min-height: 40px;
+    line-height: 20px;
+    /*fit bootstrap value*/
+    margin-top: 0;
+    text-align: left;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.office-form-question-choice-text-row input[type=radio]{
+    display:none;
+}
+
+div.radio > label > input[type=radio]{
+    display:none;
+}
+
+/*align radio text */
+input[type="radio"] + span.office-form-question-choice-text-span > span {
+  vertical-align:top;
+}
+input[type="radio"] + span::before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin-right: 5px;
+    margin-left:-40px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid var(--form-theme-primary-color);
+    background-color: white;
+    border-radius: 50%;
+}
+/*radio + textfield other answer */
+input[type="radio"] +div.office-form-other-answer-inline::before{
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin-right: 5px;
+    margin-left:-40px;
+    vertical-align: middle;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid var(--form-theme-primary-color);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* appearance of checked radiobutton */
+input[type="radio"]:checked + span::before {
+    background-color: var(--form-theme-primary-color);
+}
+
+/*change question-choice-active-background and front colors*/
+.office-form-question-choice-mobile.office-form-theme-page-background-active.active {
+  background: white;
+  color:black
+}
+
+.office-form-other-answer-mobile .office-form-other-answer-textbox {
+  width: 92%;
+  /*Compatibility for old browsers*/
+  width: calc(100% - 26px);
+  display: inline-block;
+  margin-left: 10px;
+  /*height: 40px;*/
+}
+
+
+.radio-icon {
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    color: var(--form-theme-primary-color);
+}
+
+/*rateit question*/
+ div.rateit-selected
+ {
+    color: var(--form-theme-primary-color) !important;
+}
+/*form navigation*/
+.mobile-view .office-form-navigation-container,
+.small-screen .office-form-navigation-container {
+    display: inherit;
+    margin-top: var(--form-navigation-margin-top);
+}
+
+.forms-pro .mobile-view .smiley-images {
+    margin-left: 0;
+}
+
+
+.forms-pro .smiley-emoji-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: initial;
+}
+.forms-pro .smiley-container-centeralign {
+    /*width: 100%;*/
+}
+.forms-pro .mobile-view .smiley-images {
+    height: 20px;
+    width: 20px;
+    margin: 0 20px 0 0;
+}
+.office-form-footer-block {
+    margin: 15px auto;
+    width: 100%;
+    line-height: 16px;
+    font-size: 12px;
+    color: #333;
+}
+.office-form-notice-password {
+    display:none;
+}
+
+.progress-bar {
+    background-color: #E1E1E1 !important;
+}
+.progress-bar-text {
+    font-family: var(--cv-question-font) !important;
+    font-size: 12px !important;
+}
+.office-form-button-container {
+  flex-direction:column !important;
+}
+.office-form-bottom-button-div
+{
+    width:100% !important;
+    margin:0 !important;
+}
+
+/*Ranking*/
+.office-form-sort-item {
+    font-family: var(--cv-question-font) !important;
+    font-size: 16px !important;
+    background-color: white;
+}
+
+.office-form-selected-item .office-form-sort-item-indicator,
+.office-form-sortable-chosen .office-form-sort-item-indicator {
+    color: var(--form-theme-primary-color) !important;
+}
+
+.office-form-theme-sort-item.office-form-selected-item,
+.office-form-theme-sort-item:focus
+{
+    background: white !important;
+    color: black !important;
+}
+.office-form-selected-item .office-form-active-arrow {
+    color: var(--form-theme-primary-color) !important;
+}

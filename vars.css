@@ -1,0 +1,36 @@
+﻿:root {
+    /*CV*/
+    --cv-question-title-font-size: 16px;
+    /*height between items inside a question*/
+    --cv-question-line-height: 26px;
+    /*height between questions*/
+    --cv-question-interval-height: 20px;
+    /*question title font*/
+    --cv-question-font: "Roboto";
+    --cv-button-background-color: #0078D4;
+    /*Title bar*/
+    --form-title-container: none;
+    /*Office forms*/
+    /* Primary Color */
+    --form-theme-primary-color: #0078D4;
+    --form-theme-text-on-primary-color: white;
+    /* Secondary Color */
+    --form-theme-secondary-color: #0078D4;
+    --form-theme-text-on-secondary-color: #ffffff;
+    /*form Background Color(entire) */
+    --form-theme-background: white;
+    /*form body Color*/
+    --form-body-background-color: white;
+    /* Form Frame Shadow */
+    --form-theme-shadow: 0 0 11px rgba(0, 0, 0, 0.12);
+    /* Progress Bar */
+    --form-theme-progress-bar-background: white;
+    /*textbox*/
+    --form-question-textbox-background-color: white;
+    --form-question-textbox-front-color: black;
+    /*form navigation*/
+    --form-navigation-margin-top: 0px;
+    /*question-element-margin-left*/
+    --form-question-element-margin-left: 0px;
+}
+
