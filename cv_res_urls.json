@@ -10,6 +10,24 @@
   "staticresouces": [
     {
       "method": "GET",
+      "mapkey": "vars.css",
+      "Condition": "AndroidOnly",
+      "fullUrl": "https://aka.ms/cvsdkvarscss"
+    },
+    {
+      "method": "GET",
+      "mapkey": "androidstyle.css",
+      "only": "Android",
+      "fullUrl": "https://aka.ms/cvsdkandroidstyle"
+    },
+    {
+      "method": "GET",
+      "mapkey": "iosstyle.css",
+      "only": "iOS",
+      "fullUrl": "https://aka.ms/cvsdkiosstyle"
+    },
+    {
+      "method": "GET",
       "fullUrl": "https://c1.microsoft.com/c.gif"
     },
     {
