@@ -1,5 +1,5 @@
 {
-  "Version": "2.1.002",
+  "Version": "2.1.1001",
   "dependence": [
     {
       "method": "GET",
@@ -11,6 +11,7 @@
     {
       "method": "GET",
       "storekey": "vars.css",
+      "Condition": "AndroidOnly",
       "fullUrl": "https://aka.ms/cvsdkvarscss"
     },
     {
