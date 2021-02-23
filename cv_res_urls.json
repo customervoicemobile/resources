@@ -10,6 +10,23 @@
   "staticresouces": [
     {
       "method": "GET",
+      "storekey": "vars.css",
+      "fullUrl": "https://aka.ms/cvsdkvarscss"
+    },
+    {
+      "method": "GET",
+      "storekey": "androidstyle.css",
+      "only": "Android",
+      "fullUrl": "https://aka.ms/cvsdkandroidstyle"
+    },
+    {
+      "method": "GET",
+      "storekey": "iosstyle.css",
+      "only": "iOS",
+      "fullUrl": "https://aka.ms/cvsdkiosstyle"
+    },
+    {
+      "method": "GET",
       "fullUrl": "https://c1.microsoft.com/c.gif"
     },
     {
