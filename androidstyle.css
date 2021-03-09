@@ -1,6 +1,10 @@
 ﻿
 
 /*Android Styles */
+.multi-lingual-select-control
+{
+    visibility:hidden !important
+}
 
 /*Scrollbar*/
 ::-webkit-scrollbar {
