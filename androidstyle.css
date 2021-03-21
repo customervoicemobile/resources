@@ -1,9 +1,22 @@
 ﻿
 
 /*Android Styles */
+
+/*
+hide multi languages selector, and move next div up to reduce top margin
+must add the two classes,if not, doesn't work with office forms
+*/
 .multi-lingual-select-control
 {
-    visibility:hidden !important
+    visibility:hidden !important;
+}
+.multi-lingual-select-control.isMobile
+{
+    visibility:hidden !important;
+}
+div.multi-lingual-select-control+div
+{
+    margin-top:-40px !important;
 }
 
 /*Scrollbar*/

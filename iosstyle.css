@@ -1,11 +1,23 @@
 
 
 /*iOS Styles */
-/**/
+/*
+hide multi languages selector, and move next div up to reduce top margin
+must add the two classes,if not, doesn't work with office forms
+*/
 .multi-lingual-select-control
 {
-    visibility:hidden !important
+    visibility:hidden !important;
 }
+.multi-lingual-select-control.isMobile
+{
+    visibility:hidden !important;
+}
+div.multi-lingual-select-control+div
+{
+    margin-top:-40px !important;
+}
+
 
 /*Scrollbar*/
 ::-webkit-scrollbar {
@@ -195,7 +207,7 @@ Text Field
 div.office-form-textfield > input,
 div.office-form-textfield > textarea {
     background-color: var(--form-question-textbox-background-color);
-    color: var(--form-question-textbox-front-color);
+    color: #E1E1E1;
     position: static;
     height: 24px;
     left: 0px;
@@ -313,7 +325,7 @@ input[type="radio"] + span::before {
     margin-left:-40px;
     /* background-color only for content */
     background-clip: content-box;
-    border: 2px solid var(--form-theme-primary-color);
+    border: 2px solid #919191;
     background-color: white;
     border-radius: 50%;
 }
@@ -330,14 +342,14 @@ input[type="radio"] +div.office-form-other-answer-inline::before{
     vertical-align: middle;
     /* background-color only for content */
     background-clip: content-box;
-    border: 2px solid var(--form-theme-primary-color);
+    border: 2px solid #919191;
     background-color: white;
     border-radius: 50%;
 }
 
 /* appearance of checked radiobutton */
 input[type="radio"]:checked + span::before {
-    background-color: var(--form-theme-primary-color);
+    background-color: #919191;
 }
 
 /*change question-choice-active-background and front colors*/
