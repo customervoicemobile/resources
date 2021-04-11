@@ -425,7 +425,9 @@ input[type="radio"]:checked + span::before {
 .progress-bar-text {
     font-family: var(--cv-question-font) !important;
     font-size: 12px !important;
+    color:#6E6E6E !important;
 }
+
 .office-form-button-container {
   flex-direction:column !important;
 }
@@ -456,3 +458,95 @@ input[type="radio"]:checked + span::before {
 .office-form-selected-item .office-form-active-arrow {
     color: var(--form-theme-primary-color) !important;
 }
+
+/*CSS Patch
+change style for rating question
+radio button size changes to 20px by 20px
+using before to insert a new style button
+and make original input radio button to white
+*/
+.office-form-question-rating-item>input {
+    width: 0px;
+    height: 0px;
+    border: 0px;
+
+}
+.office-form-question-rating-item>input:checked {
+    color:white;
+    background-color:white;
+    margin-top:20px;
+}
+input[type="radio"]:before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin-left:-10px;
+
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid var(--form-theme-primary-color);
+    background-color: white;
+    border-radius: 50%;
+}
+input[type="radio"]:checked:before {
+    background-color: var(--form-theme-primary-color);
+    margin-left:-10px;
+     margin-top:-10px;
+}
+/*CSS Patch
+Multiple Choice Question's Style
+*/
+
+label.office-form-question-choice-row >
+input[type="checkbox"]+
+span.office-form-question-choice-text-span>
+span{
+  margin-left:10px;
+}
+
+label.office-form-question-choice-row>
+input[type="checkbox"] {
+    display:none;
+}
+label.office-form-question-choice-row >
+input[type="checkbox"]+
+span.office-form-question-choice-text-span:before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin-left:-40px;
+    margin-bottom:-5px;
+
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid var(--form-theme-primary-color);
+    background-color: white;
+
+}
+label.office-form-question-choice-row >
+input[type="checkbox"]:checked+
+span.office-form-question-choice-text-span:after {
+   content: '';
+   position: absolute;
+   width: 1.4ex;
+   height: 0.6ex;
+   margin-left:-10px;
+   background: rgba(0, 0, 0, 0);
+   top: 0.9ex;
+   left: 0.3ex;
+   border: 2px solid var(--form-theme-primary-color);
+   border-top: none;
+   border-right: none;
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+}
+
