@@ -550,3 +550,9 @@ span.office-form-question-choice-text-span:after {
    transform: rotate(-45deg);
 }
 
+/*CSS Patch
+remove section outline
+*/
+.form-renderer-section-container:focus {
+    outline-style: none;
+}
