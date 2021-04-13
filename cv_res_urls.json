@@ -91,6 +91,14 @@
       "fullUrl": "https://customervoice.microsoft.com/Pages/ResponsePage.aspx/GetResourceStrings"
     },
     {
+      "Desc": "for multiple language survey,need to download language depended Resource Strings",
+      "method": "POST",
+      "condition":"language",
+      "mimeType": "application\/json",
+      "encoding": "utf-8",
+      "fullUrl": "https://customervoice.microsoft.com/Pages/ResponsePage.aspx/GetResourceStrings"
+    },
+    {
       "method": "POST",
       "mimeType": "application\/json",
       "encoding": "utf-8",
