@@ -1,6 +1,9 @@
 ﻿
-
 /*Android Styles */
+:root {
+    /*question title font*/
+    --cv-question-font: "Roboto";
+}
 
 /*
 hide multi languages selector, and move next div up to reduce top margin
@@ -37,7 +40,7 @@ div.multi-lingual-select-control+div
     background: #fff;
     opacity: 1.0;
     background-color:var(--form-body-background-color);
-    line-height: var(--cv-question-interval-height);
+    line-height: 20px;
 }
 @media screen and (max-width: 640px) {
     .small-screen .office-form-body {
@@ -177,8 +180,8 @@ div.multi-lingual-select-control+div
     font-family: var(--cv-question-title-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--cv-question-title-font-size);
-    line-height: var(--cv-question-line-height);
+    font-size: 16px;
+    line-height: 26px;
 }
 
 

@@ -1,12 +1,4 @@
-:root {
-    /*CV*/
-    --cv-question-title-font-size: 15px;
-    /*height between items inside a question*/
-    --cv-question-line-height: 20px;
-    /*height between questions*/
-    --cv-question-interval-height: 20px;
-    /*question title font*/
-    --cv-question-font: "-apple-system, system-ui, BlinkMacSystemFont";
+﻿:root {
     --cv-button-background-color: #0078D4;
     /*Title bar*/
     --form-title-container: none;

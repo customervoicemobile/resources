@@ -1,3 +1,11 @@
+:root
+{
+    /*question title font*/
+    /*--cv-question-font: "-apple-system, system-ui, BlinkMacSystemFont";*/
+    /*use empty to make sure it uses default front which s SF Pro Text*/
+    --cv-question-font: "";
+}
+
 /*iOS Styles */
 /*
 hide multi languages selector, and move next div up to reduce top margin
@@ -35,7 +43,7 @@ div.multi-lingual-select-control+div
     background: #fff;
     opacity: 1.0;
     background-color:var(--form-body-background-color);
-    line-height: var(--cv-question-interval-height);
+    line-height: 20px;
 }
 @media screen and (max-width: 640px) {
     .small-screen .office-form-body {
@@ -175,8 +183,8 @@ div.multi-lingual-select-control+div
     font-family: var(--cv-question-title-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--cv-question-title-font-size);
-    line-height: var(--cv-question-line-height);
+    font-size: 17px;
+    line-height: 20px;
 }
 
 
@@ -230,7 +238,7 @@ div.office-form-textfield > textarea {
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 0px;
+    margin: 0px 0px 0px 18px;
 }
 
 div.office-form-textfield > input:focus,
@@ -311,6 +319,7 @@ div.radio > label > input[type=radio]{
 /*align radio text */
 input[type="radio"] + span.office-form-question-choice-text-span > span {
   vertical-align:top;
+  margin-left: 10px;
 }
 input[type="radio"] + span::before {
     content: "";
@@ -541,7 +550,7 @@ label.office-form-question-choice-row >
 input[type="checkbox"]+
 span.office-form-question-choice-text-span>
 span{
-  margin-left:10px;
+  margin-left:20px;
 }
 
 label.office-form-question-choice-row>
