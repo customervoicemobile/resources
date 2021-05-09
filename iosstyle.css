@@ -1,5 +1,3 @@
-
-
 /*iOS Styles */
 /*
 hide multi languages selector, and move next div up to reduce top margin
@@ -318,8 +316,8 @@ input[type="radio"] + span::before {
     content: "";
     /* create custom radiobutton appearance */
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     padding: 3px;
     margin-right: 5px;
     margin-left:-40px;
@@ -334,8 +332,8 @@ input[type="radio"] +div.office-form-other-answer-inline::before{
     content: "";
     /* create custom radiobutton appearance */
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     padding: 3px;
     margin-right: 5px;
     margin-left:-40px;
@@ -348,9 +346,41 @@ input[type="radio"] +div.office-form-other-answer-inline::before{
 }
 
 /* appearance of checked radiobutton */
-input[type="radio"]:checked + span::before {
-    background-color: #919191;
+input[type="radio"]:checked  + span::before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+    margin-right: 5px;
+    margin-left:-40px;
+    /* background-color only for content */
+    background-clip: content-box;
+    background-color: var(--form-theme-primary-color);
+    border: 0px solid var(--form-theme-primary-color);
+    border-radius: 50%;
 }
+input[type="radio"]:checked + span::after {
+    content: '';
+    position: absolute;
+    width: 1.4ex;
+    height: 0.7ex;
+    margin-top:2px;
+    margin-left:-6px;
+    background: rgba(0, 0, 0, 0);
+    top: 1.0ex;
+    left: 0.2ex;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 
 /*change question-choice-active-background and front colors*/
 .office-form-question-choice-mobile.office-form-theme-page-background-active.active {
@@ -425,7 +455,9 @@ input[type="radio"]:checked + span::before {
 .progress-bar-text {
     font-family: var(--cv-question-font) !important;
     font-size: 12px !important;
+    color:#6E6E6E !important;
 }
+
 .office-form-button-container {
   flex-direction:column !important;
 }
@@ -456,3 +488,128 @@ input[type="radio"]:checked + span::before {
 .office-form-selected-item .office-form-active-arrow {
     color: var(--form-theme-primary-color) !important;
 }
+
+textarea.office-form-question-textbox.office-form-textfield-input{
+  display: inline-grid !important;
+  align-items: auto !important;
+  height:auto !important;
+  min-height:auto !important;
+}
+
+/*CSS Patch
+change style for rating question
+radio button size changes to 24px by 24px
+using before to insert a new style button
+and make original input radio button to white
+*/
+.office-form-question-rating-item>input {
+    width: 0px;
+    height: 0px;
+    border: 0px;
+
+}
+.office-form-question-rating-item>input:checked {
+    color:white;
+    background-color:white;
+    margin-top:20px;
+}
+input[type="radio"]:before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    margin-right: 5px;
+    margin-left:-10px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #919191;
+    background-color: white;
+    border-radius: 50%;
+}
+input[type="radio"]:checked:before {
+    background-color: var(--form-theme-primary-color);
+    margin-left:-10px;
+    margin-top:-5px;
+}
+/*CSS Patch
+Multiple Choice Question's Style
+*/
+
+label.office-form-question-choice-row >
+input[type="checkbox"]+
+span.office-form-question-choice-text-span>
+span{
+  margin-left:10px;
+}
+
+label.office-form-question-choice-row>
+input[type="checkbox"] {
+    display:none;
+}
+label.office-form-question-choice-row >
+input[type="checkbox"]+
+span.office-form-question-choice-text-span:before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    margin-left:-40px;
+    margin-bottom:-5px;
+
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #919191;
+    background-color: white;
+
+}
+label.office-form-question-choice-row >
+input[type="checkbox"]:checked+
+span.office-form-question-choice-text-span:before {
+    content: "";
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+    margin-left:-40px;
+    margin-bottom:-5px;
+
+    /* background-color only for content */
+    background-clip: content-box;
+    background-color: var(--form-theme-primary-color);
+    border:0px;
+}
+
+label.office-form-question-choice-row >
+input[type="checkbox"]:checked+
+span.office-form-question-choice-text-span:after {
+    content: '';
+    position: absolute;
+    width: 1.4ex;
+    height: 0.7ex;
+    margin-top:2px;
+    margin-left:-6px;
+    background: rgba(0, 0, 0, 0);
+    top: 1.0ex;
+    left: 0.2ex;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/*CSS Patch
+remove section outline
+*/
+.form-renderer-section-container:focus {
+    outline-style: none;
+}
+
