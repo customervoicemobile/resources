@@ -21,7 +21,6 @@
     {
       "method": "GET",
       "storekey": "vars.css",
-      "Condition": "AndroidOnly",
       "fullUrl": "https://aka.ms/cvsdkvarscss"
     },
     {
