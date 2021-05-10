@@ -228,7 +228,8 @@ div.office-form-textfield > textarea {
     border-left-style: none;
     border-right-style: none;
     border-top-style: none;
-    border-bottom-width: 1px;
+    /*border-bottom-width: 1px;*/
+    border-bottom-style: none;
     border-bottom-color: #E1E1E1;
     padding-left: 0;
     /* Inside Auto Layout */
@@ -316,6 +317,7 @@ div.radio > label > input[type=radio]{
 /*align radio text */
 input[type="radio"] + span.office-form-question-choice-text-span > span {
   vertical-align:top;
+  margin-left: 10px;
 }
 input[type="radio"] + span::before {
     content: "";
@@ -507,7 +509,7 @@ label.office-form-question-choice-row >
 input[type="checkbox"]+
 span.office-form-question-choice-text-span>
 span{
-  margin-left:10px;
+  margin-left:20px;
 }
 
 label.office-form-question-choice-row>
