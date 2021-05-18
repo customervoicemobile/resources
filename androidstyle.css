@@ -579,19 +579,6 @@ div.rateit
 BUT, upper element div has attr: data-rateit-marginright="49.25", can't be changed in css
 */
 
-/*
-Question: NPS
-*/
-
-div.nps-control-label-container>div>span
-{
-    Color:#919191;
-}
-label.answer-label>span
-{
-    font-weight:500;
-    color:black;
-}
 
 /*
 Matrix Question
@@ -633,4 +620,63 @@ File Upload
 .office-form-upload-container.button-control
 {
     margin-left:-20px;
+}
+
+/*
+Question: NPS
+*/
+
+div.nps-control-label-container>div>span
+{
+    Color:#919191;
+}
+label.answer-label
+{
+  width: 32px;
+  height: 32px;
+}
+label.answer-label>span
+{
+    font-weight:500;
+    color:black;
+}
+
+td.radio-button-item
+{
+    border: 2px solid white !important;
+    border-right 0 none;
+    background-color:#F1F1F1;
+
+}
+label.answer-label.touch.office-form-theme-button-foreground.active {
+  color: #2266E3 !important;
+  background: #E7EFFF !important;
+
+}
+label.answer-label.active>span {
+    font-weight: 500;
+    color: #2266E3;
+}
+
+.nps-control .nps-control-table td.radio-button-item
+div.radio-button label.answer-label
+{
+  margin-bottom:5px;
+}
+.nps-control .nps-control-table
+{
+    margin-left:-5px;
+}
+
+/*
+Back and Next button
+*/
+
+button[aria-label="Back"] .button-content
+{
+    Color:var(--form-theme-primary-color);
+}
+button[aria-label="Back"].office-form-bottom-button:hover
+{
+    border: 1px solid;
 }
