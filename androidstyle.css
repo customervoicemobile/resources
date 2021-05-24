@@ -360,6 +360,10 @@ input[type="radio"]:checked + span::before {
   color:black
 }
 
+.office-form-other-answer-mobile
+{
+    margin-top:0;
+}
 .office-form-other-answer-mobile .office-form-other-answer-textbox {
   width: 92%;
   /*Compatibility for old browsers*/
@@ -437,7 +441,10 @@ input[type="radio"]:checked + span::before {
     background-color: white;
     margin-left:-10px;
 }
-
+.office-form-sort-item-content
+{
+    margin-left:20px;
+}
 .office-form-selected-item .office-form-sort-item-indicator,
 .office-form-sortable-chosen .office-form-sort-item-indicator {
     color: var(--form-theme-primary-color) !important;
@@ -499,7 +506,7 @@ label.office-form-question-choice-row >
 input[type="checkbox"]+
 span.office-form-question-choice-text-span>
 span{
-  margin-left:44px;
+  margin-left:42px;
 }
 
 label.office-form-question-choice-row>
@@ -597,6 +604,14 @@ li.office-form-theme-page-background-active.active
        color:black;
 }
 
+.office-form-question-matrix-choice-row .office-form-question-matrix-choice-text
+{
+    padding-left:20px;
+}
+.office-form-mobile-matrix-title .office-form-mobile-matrix-answered-indicator
+{
+    margin-left:-10px;
+}
 .radio-icon
 {
     width: 20px;
@@ -680,3 +695,20 @@ button[aria-label="Back"].office-form-bottom-button:hover
 {
     border: 1px solid;
 }
+
+/*
+rating question, remove description's background
+*/
+.office-form-rating-description-container
+{
+    background-color:var(--form-theme-background);
+    padding:0;
+}
+.office-form-rating-description-label
+{
+  Color:#6e6e6e;
+}
+div.rating-option-description span{
+  Color:#6e6e6e;
+}
+
